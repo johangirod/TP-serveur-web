@@ -1,7 +1,9 @@
 const restaurant = {
-  name: "Fraternité Kebab",
+  name: "Fraternité Kebab's",
   description:
     "Le meilleur kebab de la ville, avec des frites maison et une sauce secrète.",
 };
 
-export default restaurant;
+export function getRestaurant() {
+  return restaurant;
+}

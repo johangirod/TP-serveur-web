@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "vitest",
-    "start": "ts-node-dev --respawn index.ts"
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "database:init": "ts-node scripts/database-init.ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "eslint": "^8.50.0",
     "jsdom": "^22.1.0",
     "prettier": "3.0.3",
+    "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "tsc": "^2.0.4",
     "vitest": "^0.34.6"
@@ -33,6 +35,8 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.6.1"
   }
 }

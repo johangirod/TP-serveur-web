@@ -20,4 +20,19 @@ const menus = [
   },
 ];
 
+export type Menu = {
+  id: string;
+  name: string;
+  price: number;
+  description: string;
+};
+
+export function getMenuById(id: string): Menu | undefined {
+  return menus.find((m) => m.id === id);
+}
+
+export function getAllMenus(): Menu[] {
+  return menus;
+}
+
 export default menus;
